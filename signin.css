@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+
+    --html-bgcolor: #E5E5E5;
+    --div-bgcolor: #343a40;
+    --div-textcolor: #FFFFFF;
+    --link-color: hsla(0, 0%, 100%, 0.507);
+
+    --shadows: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+
+html {
+    font-family: var(--font-familyS);
+    background-color: var(--html-bgcolor);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 30% 20px;
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: var(--div-bgcolor);
+    color: var(--div-textcolor);
+    border-radius: 20px;
+}
+
+h1 {
+    padding-left: 25%;
+    /* margin: 0 auto; */
+}
+
+p {
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+input {
+    background-color: var(--html-bgcolor);
+    color: var(--div-bgcolor);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 5px 0px 10px 10px;
+    padding: 10px;
+    min-width: 300px;
+}
+
+button {
+    background-color: var(--html-bgcolor);
+    color: var(--div-bgcolor);
+    border: none;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    /* box-shadow: var(--shadows); */
+}
+
+button:hover {
+    background-color: hsla(210, 10%, 23%, 0.425);
+    color: white;
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: var(--shadows);
+    transition: 0.7s;
+}
+
+button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: var(--shadows);
+}
+
+button:active {
+    background-color: #283618;
+}
+
+#signup {
+    min-width: 150px;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+a:any-link {
+    color: var(--div-textcolor);
+}
+
+:is(a:hover, a:focus) {
+    color: var(--link-color);
+}
+
+a:active {
+    color: var(--link-color);
+}
+
+#signin {
+    min-width: 150px;
+}
